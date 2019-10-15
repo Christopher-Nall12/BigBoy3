@@ -27,10 +27,30 @@ for sides in range(40, 400, 40):
 
 
 # See the loop above. In addition to the value of pi, print the difference
-# between the values calculated but the archimedes function and by math.pi.
+# between the values calculated by the archimedes function and by math.pi.
 # How many sides does it take to make the 2 functions closer
+
+# The difference is -3.98741751768128e-05
+
+# The numbers you use are 40 million, 400 million, 40 million in the archimedes program.
 
 for sides in range(40, 400, 40):
     print(sides, archimedes(sides))
 
 print(3.1415527794146163-3.141592653589793)
+
+
+for sides in range(40000000, 400000000, 40000000):
+    print(sides, archimedes(sides))
+
+print(math.pi)
+
+
+
+# Accumulators
+
+acc = 0
+for val in range(1, 6):
+    acc = acc + val
+
+print(acc)
