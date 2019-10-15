@@ -49,8 +49,23 @@ print(math.pi)
 
 # Accumulators
 
+# accumulators hold the value that was added and keeps stacking and the value keeps going starting from the x value (x,y) and does not include
+# the value.
+
 acc = 0
 for val in range(1, 6):
     acc = acc + val
 
 print(acc)
+
+acc = 0
+for val in range(2, 20):
+    acc = acc + val
+
+print(acc)
+
+# by adding a third number you are telling the computer to count by that certain number
+
+# Compute the sum of the first 100 even numbers
+# Compute the sum of the first 50 odd numbers
+# Compute the average of the first 100 odd numbers
