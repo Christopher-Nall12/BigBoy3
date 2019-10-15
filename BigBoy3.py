@@ -90,6 +90,13 @@ print(acc)
 
 
 
+acc = 0
+N = acc + 3
+
+for val in range(N, 101, 2):
+    acc = acc + val
+
+print(acc)
 
 # Compute the sum of the first 100 even numbers     10100
 # Compute the sum of the first 50 odd numbers       2500
