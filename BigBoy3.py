@@ -65,7 +65,33 @@ for val in range(2, 20):
 print(acc)
 
 # by adding a third number you are telling the computer to count by that certain number
+# the second number is the number that is greater than the last number of your sequence but not equal
 
-# Compute the sum of the first 100 even numbers
-# Compute the sum of the first 50 odd numbers
-# Compute the average of the first 100 odd numbers
+acc = 0
+for val in range(0, 201, 2):
+    acc = acc + val
+#          start    Number greater than    what to count by
+print(acc)
+
+acc = 0
+for val in range(1, 101, 2):
+    acc = acc + val
+
+print(acc)
+
+acc = 0
+for val in range(1, 201, 2):
+    acc = acc + val / 100
+
+# The computer does not care about putting parentheses it always does the equation from left to right
+# making it say the accumulative added by the value and then being divided by 100
+
+print(acc)
+
+
+
+
+# Compute the sum of the first 100 even numbers     10100
+# Compute the sum of the first 50 odd numbers       2500
+# Compute the average of the first 100 odd numbers  100.0
+# Write a function that returns the average to the first N numbers, where N is the parameter
