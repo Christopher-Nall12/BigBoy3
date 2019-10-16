@@ -98,7 +98,43 @@ for val in range(N, 101, 2):
 
 print(acc)
 
+factorial = N
+for val in range(N, 101):
+    factorial = val + factorial
+print(factorial)
+
+acc = 0
+for val in range(1, 11):
+    acc = val + acc
+print(acc)
+
+
+
 # Compute the sum of the first 100 even numbers     10100
 # Compute the sum of the first 50 odd numbers       2500
 # Compute the average of the first 100 odd numbers  100.0
-# Write a function that returns the average to the first N numbers, where N is the parameter
+# Write a function that returns the average to the first N numbers, where N is the parameter    I made N = to acc + 3. By doing that
+# it is raising the value of N every time.
+
+# Write a function called fractorial that computes the product of the first N numbers, where the N is a Parameter.
+# factorial = N
+# for val in range(N, 101):
+#     factorial = val + factorial
+# print(factorial)
+
+# Each number in the Fibonacci sequence is the sum of the previous two numbers.
+# acc = 0
+# for val in range(1, 11):
+#     acc = val + acc
+# print(acc)
+# The first two numbers in the sequence are 1 and 1.  Compute the 10th Fibonacci number.  55
+
+# Write a function to compute the Nth Fibonacci number, where N is a parameter.
+# You may assume that N will be greater than or equal to 3.    Depending on what value you give to the variable(N) it will vary your answer
+# If you have a rule that the variable is greater than or equal to 3 then you can use and positive integer greater or equal to 3.
+
+N = 3
+acc = 0
+for val in range(1, N):
+    acc = val + acc
+print(acc)
