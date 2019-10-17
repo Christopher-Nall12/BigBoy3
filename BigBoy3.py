@@ -111,7 +111,9 @@ print(acc)
 
 
 # Compute the sum of the first 100 even numbers     10100
+
 # Compute the sum of the first 50 odd numbers       2500
+
 # Compute the average of the first 100 odd numbers  100.0
 # Write a function that returns the average to the first N numbers, where N is the parameter    I made N = to acc + 3. By doing that
 # it is raising the value of N every time.
