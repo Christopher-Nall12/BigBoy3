@@ -149,3 +149,76 @@ print(acc)
 import random
 
 print(random.random())
+
+# Boolean Expressions
+# < > >= <= != ==
+# == compare
+# < Less than
+# > Greater than
+# >= Greater than or equal to
+# <= Less than or equal to
+# != is not equal to
+
+# and, or, not
+
+
+dogweight = 25
+print(dogweight == 25)
+print(dogweight != 25)
+print(dogweight > 25)
+print(dogweight < 25)
+print(dogweight >= 25)
+print(dogweight <= 25)
+catweight = 12
+print(dogweight == 25 and catweight == 12)
+# and says that both have to be correct for it to be correct
+print(dogweight == 10 and catweight == 12)
+# or says only one has to be right for it to be correct. both must be wrong for it to be false
+print(dogweight == 10 or catweight == 12)
+# not counter the original value making it the opposite (if it was originally true it will become false
+print(not catweight == 12)
+print(not catweight <=10)
+
+alice = 20
+bob = 15
+carol = 25
+ans = 0
+
+if alice > 20:
+    if bob < 50:
+        ans = 300
+    else:
+        ans = 300
+else:
+    if carol > 300:
+        ans = 200
+    else:
+        ans = 75
+print(ans)
+
+value = 75
+if value > 10:
+    print("bigger than 10")
+else:
+    if value > 20:
+        print("bigger than 20")
+    else:
+        if value > 45:
+            print("bigger than 45")
+        else:
+            print("not bigger than much")
+
+
+value = 75
+if value > 100:
+    print("bigger than 100")
+else:
+    if value > 80:
+        print("bigger than 80")
+    else:
+        if value > 45:
+            print("bigger than 45")
+        else:
+            print("not bigger than much")
+
+# you can combine else and if into elif so you dont have to write that much.
