@@ -140,3 +140,12 @@ acc = 0
 for val in range(1, N):
     acc = val + acc
 print(acc)
+
+
+
+# Monte Carlo Simulation
+# Random Numbers
+
+import random
+
+print(random.random())
