@@ -244,6 +244,7 @@ print(montpi(1000))
 
 import turtle
 
+
 def ShowMontpi(numDarts):
 
     scr = turtle.Screen()
@@ -252,14 +253,14 @@ def ShowMontpi(numDarts):
     scr.setworldcoordinates(-2, -2, 2, 2)
 
     t.penup()
-    t.goto(0, 1)
+    t.goto(-1, 0)
     t.pendown()
     t.goto(1, 0)
 
     t.penup()
-    t.goto(0, -1)
+    t.goto(0, 1)
     t.pendown()
-    t.goto(-1, 0)
+    t.goto(0, -1)
 
     t.penup()
 
@@ -271,14 +272,29 @@ def ShowMontpi(numDarts):
 
         distance = math.sqrt(x**2 + y**2)
         t.goto(x, y)
-
+        t.goto(-x, y)
+        t.goto(-x, -y)
+        t.goto(x, -y)
 
         if distance <= 1:
             inCircle = inCircle + 1
 
             t.color("blue")
-            else t.color("red")
+        else:
+            t.color("red")
+
+        t.dot()
 
     pi = inCircle / numDarts * 4
     return pi
 
+print(ShowMontpi(10))
+
+
+# Modify simulation to plot points in the entire circle
+
+
+
+
+
+turtle.exitonclick()
