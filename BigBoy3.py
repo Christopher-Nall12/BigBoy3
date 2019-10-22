@@ -239,3 +239,46 @@ def montpi(numDarts):
 
     pi = inCircle / numDarts * 4
     return pi
+
+print(montpi(1000))
+
+import turtle
+
+def ShowMontpi(numDarts):
+
+    scr = turtle.Screen()
+    t = turtle.Turtle()
+
+    scr.setworldcoordinates(-2, -2, 2, 2)
+
+    t.penup()
+    t.goto(0, 1)
+    t.pendown()
+    t.goto(1, 0)
+
+    t.penup()
+    t.goto(0, -1)
+    t.pendown()
+    t.goto(-1, 0)
+
+    t.penup()
+
+    inCircle = 0
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+        t.goto(x, y)
+
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+            t.color("blue")
+            else t.color("red")
+
+    pi = inCircle / numDarts * 4
+    return pi
+
