@@ -221,4 +221,21 @@ else:
         else:
             print("not bigger than much")
 
-# you can combine else and if into elif so you dont have to write that much..
+# you can combine else and if into elif so you don't have to write that much.
+
+
+def montpi(numDarts):
+
+    inCircle = 0
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+    pi = inCircle / numDarts * 4
+    return pi
