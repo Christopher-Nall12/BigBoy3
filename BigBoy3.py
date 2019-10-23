@@ -249,7 +249,9 @@ def ShowMontpi(numDarts):
 
     scr = turtle.Screen()
     t = turtle.Turtle()
-
+    f = turtle.Turtle()
+    a = turtle.Turtle()
+    b = turtle.Turtle()
     scr.setworldcoordinates(-2, -2, 2, 2)
 
     t.penup()
@@ -263,18 +265,21 @@ def ShowMontpi(numDarts):
     t.goto(0, -1)
 
     t.penup()
-
+    f.penup()
+    a.penup()
+    b.penup()
     inCircle = 0
 
     for i in range(numDarts):
         x = random.random()
         y = random.random()
 
+
         distance = math.sqrt(x**2 + y**2)
         t.goto(x, y)
-        t.goto(-x, y)
-        t.goto(-x, -y)
-        t.goto(x, -y)
+        f.goto(-x, -y)
+        a.goto(x, -y)
+        b.goto(-x, y)
 
         if distance <= 1:
             inCircle = inCircle + 1
@@ -282,13 +287,33 @@ def ShowMontpi(numDarts):
             t.color("blue")
         else:
             t.color("red")
+        if distance <= 1:
+            inCircle = inCircle + 1
 
+            a.color("blue")
+        else:
+            a.color("red")
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+            b.color("blue")
+        else:
+            b.color("red")
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+            f.color("blue")
+        else:
+            f.color("red")
         t.dot()
-
+        a.dot()
+        b.dot()
+        f.dot()
     pi = inCircle / numDarts * 4
     return pi
 
-print(ShowMontpi(10))
+
+print(ShowMontpi(100))
 
 
 # Modify simulation to plot points in the entire circle
